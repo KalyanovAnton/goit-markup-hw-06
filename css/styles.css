@@ -1178,7 +1178,7 @@ input[type='checkbox']:checked + .modal-form-agreement .modal-form-checkbox {
 
 /* #region mobile menu*/
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-color: rgb(var(--cl-white));
   opacity: 0;
@@ -1187,6 +1187,12 @@ input[type='checkbox']:checked + .modal-form-agreement .modal-form-checkbox {
   padding: 0 16px;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+     display: none;
+  }
 }
 
 .is-open {
